@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="switch-block">
+                <input onclick="backgroundCheck()" type="checkbox" id="switch" /><label id="label" for="switch">Toggle</label>
+            </div>
+            <div id="calculator">
+                <div id="display">
+                    <input type="text" id="display1" />
+                    <input type="text" id="display2" />
+                </div>
+                <div id="button-divs">
+                    <div id="first">
+                        <button onclick="reset()">С</button>
+                        <button onclick="back()">
+                            <i class="fa-solid fa-delete-left"></i>
+                        </button>
+                        <button onclick="yaz('**')">**</button>
+                        <button>/</button>
+                    </div>
+                    
+                    <div id="second">
+                        <button class="df" onclick="yaz('7')">7</button>
+                        <button class="df" onclick="yaz('8')">8</button>
+                        <button class="df" onclick="yaz('9')">9</button>
+                        <button  onclick="yaz('*')">✕</button>
+                    </div>
+        
+                    <div id="third">
+                        <button class="df" onclick="yaz('4')">4</button>
+                        <button class="df" onclick="yaz('5')">5</button>
+                        <button class="df" onclick="yaz('6')">6</button>
+                        <button onclick="yaz('-')">-</button>
+                    </div>
+        
+                    <div id="four">
+                        <button class="df" onclick="yaz('1')">1</button>
+                        <button class="df" onclick="yaz('2')">2</button>
+                        <button class="df" onclick="yaz('3')">3</button>
+                        <button onclick="yaz('+')">+</button>
+                    </div>
+        
+                    <div id="five">
+                        <button class="df" onclick="yaz('.')">.</button>
+                        <button class="df" onclick="yaz('0')">0</button>
+                        <button class="df" onclick="hesabla()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+        <script src="https://kit.fontawesome.com/d4a8753bf6.js" crossorigin="anonymous"></script>
+    </body>
+</html>
