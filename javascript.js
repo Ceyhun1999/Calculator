@@ -4,7 +4,7 @@ const button = document.querySelectorAll('button');
 const inputSwitch = document.getElementById('switch');
 const label = document.getElementById('label');
 const calculator = document.getElementById('calculator');
-const df = document.querySelectorAll('.df');
+const btn = document.querySelectorAll('.btn');
 
 function hesabla() {
     display2.value = eval(display1.value)
@@ -30,10 +30,11 @@ function backgroundCheck() {
         button.forEach((element) => {
             element.style.background = '#2228310d'
         });
-        df.forEach((item) => {
+        btn.forEach((item) => {
             item.style.color = 'black'
         });
-    } else {
+    } 
+    else {
         calculator.style.background = "rgb(34, 40, 49)"
         display1.style.background = "rgb(34, 40, 49)"
         display2.style.background = "rgb(34, 40, 49)"
@@ -42,7 +43,7 @@ function backgroundCheck() {
         button.forEach((element) => {
             element.style.background = '#393E46'
         });
-        df.forEach((item) => {
+        btn.forEach((item) => {
             item.style.color = '#fff'
         })
     }
