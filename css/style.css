@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
 
-body { display: flex; }
+body { 
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/bodyBg.jpg') center/cover
+}
 #container { margin: auto }
 #calculator {
     width: 300px;
@@ -101,4 +107,15 @@ input:checked + label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
 }
+video { display: none }
 
+@media only screen and (min-width: 768px) {
+
+    video {
+        display: inherit;
+        position: absolute;
+        z-index: -100;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}

@@ -7,14 +7,17 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        <video autoplay muted loop>
+            <source src="videoBg/videoBg.mp4" type="video/mp4">
+        </video>
         <div id="container">
             <div id="switch-block">
                 <input onclick="backgroundCheck()" type="checkbox" id="switch" /><label id="label" for="switch">Toggle</label>
             </div>
             <div id="calculator">
                 <div id="display">
-                    <input type="text" id="display1" />
-                    <input type="text" id="display2" />
+                    <input disabled="disabled" type="text" id="display1" />
+                    <input disabled="disabled" type="text" id="display2" />
                 </div>
                 <div id="button-divs">
                     <div id="first">
@@ -51,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <script src="javascript.js"></script>
+        <script src="js/javascript.js"></script>
         <script src="https://kit.fontawesome.com/d4a8753bf6.js" crossorigin="anonymous"></script>
     </body>
 </html>
